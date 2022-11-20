@@ -7,6 +7,8 @@ import { getData } from "../Redux/action";
 import { Folders } from "./Folders";
 import pdf from "../pdf/new_document.pdf";
 
+import { jsPDF } from "jspdf";
+
 const Structure = () => {
   const data = useSelector((state) => state.data);
   const [details, setDetails] = useState({});
@@ -57,6 +59,20 @@ const Structure = () => {
     }
   };
 
+  const savePdf = () => {
+    if (!Object.keys(details).length > 0) {
+      return alert("Plese Select the folder");
+    }
+    // Default export is a4 paper, portrait, using millimeters for units
+    const doc = new jsPDF();
+
+    doc.setFontSize(8);
+    var splitTitle = doc.splitTextToSize(JSON.stringify(details), 180);
+    doc.text(15, 20, splitTitle);
+
+    doc.save("familyTree.pdf");
+  };
+
   return (
     <div className="main">
       <div>
@@ -94,21 +110,26 @@ const Structure = () => {
           </div>
         </div>
         <div
-          onClick={() => setAdd((prev) => !prev)}
+          onClick={() => {
+            if (!Object.keys(details).length > 0) {
+              return alert("Plese Select the folder");
+            }
+            setAdd((prev) => !prev);
+          }}
           style={{ cursor: "pointer" }}
         >
           <h4>Add Family</h4>
         </div>
-        <div>
-          <a
+        <div onClick={savePdf}>
+          {/* <a
             target="_blank"
             rel="noreferrer"
             href={pdf}
             download="FamilyTree"
             style={{ textDecoration: "none", color: "black" }}
-          >
-            <h4>Print Family Tree</h4>
-          </a>
+          > */}
+          <h4>Print Family Tree</h4>
+          {/* </a> */}
         </div>
       </div>
       <div>
