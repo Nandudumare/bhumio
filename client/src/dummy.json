@@ -1,0 +1,148 @@
+{
+  "details": {
+    "name": "Great Grand Father",
+    "Spouse": "Spouse Name",
+    "Location": "Bhopal",
+    "Birth_Year": 1980,
+    "Present_Address": "123 Patel Road Bhopal"
+  },
+  "isFolder": true,
+  "level": 1,
+  "items": [
+    {
+      "details": {
+        "name": "Daughter 1 D1",
+        "Spouse": "Spouse Name",
+        "Location": "Bhopal",
+        "Birth_Year": 2000,
+        "Present_Address": "123 Patel Road Bhopal"
+      },
+      "level": 2,
+      "isFolder": true,
+      "items": [
+        {
+          "details": {
+            "name": "Daughter 1 GD1",
+            "Spouse": "Spouse Name",
+            "Location": "Bhopal",
+            "Birth_Year": 2022,
+            "Present_Address": "123 Patel Road Bhopal"
+          },
+          "level": 3,
+          "isFolder": true,
+          "items": [
+            {
+              "details": {
+                "name": "Son 1 GGS1",
+                "Spouse": "Spouse Name",
+                "Location": "Bhopal",
+                "Birth_Year": 2045,
+                "Present_Address": "123 Patel Road Bhopal"
+              },
+              "level": 4,
+              "isFolder": true,
+              "items":[]
+            },
+            {
+              "details": {
+                "name": "Son 2 GGS2",
+                "Spouse": "Spouse Name",
+                "Location": "Bhopal",
+                "Birth_Year": 2067,
+                "Present_Address": "123 Patel Road Bhopal"
+              },
+              "level": 4,
+              "isFolder": true,
+              "items":[]
+            },
+            {
+              "details": {
+                "name": "Daughter 1 GGD1",
+                "Spouse": "Spouse Name",
+                "Location": "Bhopal",
+                "Birth_Year": 2067,
+                "Present_Address": "123 Patel Road Bhopal"
+              },
+              "level": 4,
+              "isFolder": true,
+              "items":[]
+            }
+          ]
+        },
+        {
+          "details": {
+            "name": "Son 1 GS1",
+            "Spouse": "Spouse Name",
+            "Location": "Bhopal",
+            "Birth_Year": 2022,
+            "Present_Address": "123 Patel Road Bhopal"
+          },
+          "level": 3,
+          "isFolder": true,
+          "items":[]
+        },
+        {
+          "details": {
+            "name": "Son 2 GS2",
+            "Spouse": "Spouse Name",
+            "Location": "Bhopal",
+            "Birth_Year": 2022,
+            "Present_Address": "123 Patel Road Bhopal"
+          },
+          "level": 3,
+          "isFolder": true,
+          "items":[]
+        }
+      ]
+    },
+    {
+      "details": {
+        "name": "Son 1 S1",
+        "Spouse": "Spouse Name",
+        "Location": "Bhopal",
+        "Birth_Year": 2003,
+        "Present_Address": "123 Patel Road Bhopal"
+      },
+      "level": 2,
+      "isFolder": true,
+      "items": [
+        {
+          "details": {
+            "name": "Son 1 GS1",
+            "Spouse": "Spouse Name",
+            "Location": "Bhopal",
+            "Birth_Year": 2003,
+            "Present_Address": "123 Patel Road Bhopal"
+          },
+          "level": 3,
+          "isFolder": true,
+          "items":[]
+        },
+        {
+          "details": {
+            "name": "Son 2 GS2",
+            "Spouse": "Spouse Name",
+            "Location": "Bhopal",
+            "Birth_Year": 2003,
+            "Present_Address": "123 Patel Road Bhopal"
+          },
+          "level": 3,
+          "isFolder": true,
+          "items":[]
+        },
+        {
+          "details": {
+            "name": "son 3 GS3",
+            "Spouse": "Spouse Name",
+            "Location": "Bhopal",
+            "Birth_Year": 2003,
+            "Present_Address": "123 Patel Road Bhopal"
+          },
+          "level": 3,
+          "isFolder": true,
+          "items":[]
+        }
+      ]
+    }
+  ]
+}
