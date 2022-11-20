@@ -64,10 +64,26 @@ const Structure = () => {
       return alert("Plese Select the folder");
     }
     // Default export is a4 paper, portrait, using millimeters for units
+
+    let bag = "";
+
+    function print(data) {
+      if (data.isFolder) {
+        bag += data.details.name + "\n";
+        data.items.map((el) => {
+          return print(el);
+        });
+      }
+
+      return;
+    }
+
+    print(details);
+
     const doc = new jsPDF();
 
     doc.setFontSize(8);
-    var splitTitle = doc.splitTextToSize(JSON.stringify(details), 180);
+    var splitTitle = doc.splitTextToSize(bag, 180);
     doc.text(15, 20, splitTitle);
 
     doc.save("familyTree.pdf");
@@ -120,7 +136,7 @@ const Structure = () => {
         >
           <h4>Add Family</h4>
         </div>
-        <div onClick={savePdf}>
+        <div onClick={savePdf} style={{ cursor: "pointer" }}>
           {/* <a
             target="_blank"
             rel="noreferrer"
